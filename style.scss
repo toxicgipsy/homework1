@@ -1,0 +1,107 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $textColorWhite;
+}
+
+input,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $textColorWhite;
+}
+
+.center {
+    padding-left: calc(50% - 660px);
+    padding-right: calc(50% - 660px);
+}
+
+.top {
+    background-image: url(./img/backgraund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    &__title {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 217px;
+        padding-bottom: 32px;
+        width: 747px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        padding-bottom: 44px;
+        width: 440px;
+
+        &_bold {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+
+    &__link {
+        border-radius: 30px;
+        background: #9C0332;
+        display: inline-block;
+        color: $textColorWhite;
+        padding: 13px 74px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            background: #EB443F;
+        }
+    }
+}
+
+.main {
+    background: #000915;
+    height: 556px;
+
+    &__gamebox {
+        display: flex;
+        gap: 32px;
+        padding-top: 128px;
+
+        &_link {
+            position: relative;
+            width: 379px;
+            height: 300px;
+        }
+
+        &_text {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            left: 32px;
+            bottom: 32px;
+        }
+    }
+}
