@@ -1,0 +1,52 @@
+@media (max-width: 373px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url(./img/bg_mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__title {
+            width: 343px;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &__text {
+            width: 313px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__link {
+            width: 234px;
+            height: 48px;
+        }
+    }
+
+    .main {
+        height: 1221px;
+    }
+
+    .main__gamebox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__gamebox_pic {
+        width: 343px;
+    }
+}

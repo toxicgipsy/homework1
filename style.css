@@ -84,8 +84,6 @@ a {
 }
 .main__gamebox_link {
   position: relative;
-  width: 379px;
-  height: 300px;
 }
 .main__gamebox_text {
   position: absolute;
@@ -94,4 +92,50 @@ a {
   line-height: 32px;
   left: 32px;
   bottom: 32px;
+}
+
+@media (max-width: 373px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(./img/bg_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top__title {
+    width: 343px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .top__text {
+    width: 313px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__link {
+    width: 234px;
+    height: 48px;
+  }
+  .main {
+    height: 1221px;
+  }
+  .main__gamebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__gamebox_pic {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
