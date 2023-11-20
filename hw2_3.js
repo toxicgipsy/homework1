@@ -27,28 +27,44 @@ let b = '3';
 alert(+a + +b);
 
 // Задание 5
-let monthNumber = Number(prompt('Введи номер сезона'));
+let monthNumber = Number(prompt('Введи цифру от 1 до 12'));
 switch (monthNumber) {
     case 1:
+        alert ('Зима');
+        break;
     case 2:
+        alert ('Зима');
+        break;
     case 12:
         alert ('Зима');
-    break;
+        break;
     case 3:
+        alert ('Весна');
+        break;
     case 4:
+        alert ('Весна');
+        break;
     case 5:
         alert ('Весна');
-    break
+        break;
     case 6:
+        alert ('Лето');
+        break;
     case 7:
+        alert ('Лето');
+        break;
     case 8:
         alert ('Лето');
-    break
+        break;
     case 9:
+        alert ('Осень');
+        break;
     case 10:
+        alert ('Осень');
+        break;
     case 11:
         alert ('Осень');
-    break
+        break;
     default:
         alert('Подожди немного, может выйдет и 5 сезон ;)');
     break;
