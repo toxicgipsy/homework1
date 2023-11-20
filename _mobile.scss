@@ -1,4 +1,5 @@
-@media (max-width: 373px) {
+@media (max-width: 375px) {
+
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -29,24 +30,35 @@
             font-weight: 300;
             line-height: 22px;
             text-align: center;
+
+            &_bold {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+            }
         }
 
         &__link {
             width: 234px;
             height: 48px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 
     .main {
         height: 1221px;
-    }
 
-    .main__gamebox {
-        display: flex;
-        flex-direction: column;
-    }
+        &__gamebox {
+            display: flex;
+            flex-direction: column;
 
-    .main__gamebox_pic {
-        width: 343px;
+            &_pic {
+                width: 343px;
+            }
+        }
     }
 }
