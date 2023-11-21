@@ -42,7 +42,7 @@ a {
   line-height: normal;
   padding-top: 217px;
   padding-bottom: 32px;
-  width: 747px;
+  max-width: 747px;
 }
 .top__text {
   font-size: 18px;
@@ -50,7 +50,7 @@ a {
   font-weight: 300;
   line-height: 32px;
   padding-bottom: 44px;
-  width: 440px;
+  max-width: 440px;
 }
 .top__text_bold {
   font-size: 18px;
@@ -84,8 +84,6 @@ a {
 }
 .main__gamebox_link {
   position: relative;
-  width: 379px;
-  height: 300px;
 }
 .main__gamebox_text {
   position: absolute;
@@ -94,4 +92,126 @@ a {
   line-height: 32px;
   left: 32px;
   bottom: 32px;
+}
+
+@media (max-width: 424px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(./img/bg_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top__title {
+    width: 343px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .top__text {
+    width: 313px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__text_bold {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .top__link {
+    width: 234px;
+    height: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main {
+    height: 1221px;
+  }
+  .main__gamebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__gamebox_pic {
+    width: 343px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background-image: url(./img/backgraund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+  }
+  .top__title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+    padding-bottom: 32px;
+  }
+  .top__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 44px;
+  }
+  .top__text_bold {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .top__link {
+    border-radius: 30px;
+    background: #9C0332;
+    display: inline-block;
+    color: #fff;
+    padding: 13px 74px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .top__link:hover {
+    background: #EB443F;
+  }
+  .main {
+    display: flex;
+    gap: 32px;
+    padding-top: 128px;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  }
+  .main__gamebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__gamebox_pic {
+    width: 374px;
+  }
 }/*# sourceMappingURL=style.css.map */
