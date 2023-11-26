@@ -8,6 +8,7 @@ while (hello < 2) {
 
 // Задание 2
 let five = 1;
+
 while (five <= 5) {
     console.log(five);
     five++
@@ -15,6 +16,7 @@ while (five <= 5) {
 
 // Задание 3
 let twentyTwo = 7;
+
 while (twentyTwo <= 25) {
     console.log(twentyTwo);
     twentyTwo++
@@ -26,6 +28,7 @@ const obj = {
     'Вася': 300,
     'Петя': 400
 }
+
 for (let key in obj) {
     console.log(`${key} —— зарплата ${obj[key]} долларов`);
 }
@@ -33,6 +36,7 @@ for (let key in obj) {
 // Задание 5
 let n = 1000;
 let num = 0;
+
 while (n > 50) {
     n = n / 2
     console.log(n);
