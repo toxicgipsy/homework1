@@ -50,7 +50,7 @@
     }
 
     .main {
-        height: 1221px;
+        padding-bottom: 178px;
 
         &__gamebox {
             display: flex;
@@ -63,6 +63,8 @@
     }
 
     .seasons {
+        padding-bottom: 136px;
+        gap: 64px;
 
         &__box {
             width: 584px;
@@ -89,9 +91,17 @@
 
         &__imgbox {
             &_img {
-                width: 344px;
+                width: 340px;
             }
         }
+    }
+
+    .second__img_box {
+        order: 2;
+    }
+
+    .second__text_box {
+        order: 1;
     }
 }
 
@@ -160,7 +170,7 @@
         gap: 32px;
         flex-direction: column;
         align-items: center;
-        height: 1500px;
+        padding-bottom: 178px;
 
         &__gamebox {
             display: flex;
@@ -178,9 +188,14 @@
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
+        gap: 64px;
+        padding-bottom: 136px;
 
         &__box {
-            width: 584px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 64px;
 
             &_title {
                 font-size: 32px;
@@ -202,9 +217,16 @@
 
         &__imgbox {
             &_img {
-                width: 344px;
-                padding-top: 64px;
+                width: 390px;
             }
+        }
+
+        .second__img_box {
+            order: 2;
+        }
+
+        .second__text_box {
+            order: 1;
         }
     }
 }

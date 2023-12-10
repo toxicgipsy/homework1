@@ -26,6 +26,10 @@ a {
     padding-right: calc(50% - 660px);
 }
 
+.background_color {
+    background: #000915;
+}
+
 .top {
     background-image: url(./img/backgraund.jpg);
     background-repeat: no-repeat;
@@ -82,10 +86,11 @@ a {
 
 .main {
     background: #000915;
-    height: 556px;
+    padding-bottom: 361px;
 
     &__gamebox {
         display: flex;
+        justify-content: center;
         gap: 32px;
         padding-top: 128px;
 
@@ -105,16 +110,17 @@ a {
 }
 
 .seasons {
-    height: 880px;
     background-color: #000915;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding-right: 135px;
+    justify-content: center;
+    gap: 135px;
+    padding-bottom: 472px;
 
     &__box {
-        width: 584px;
+        width: 425px;
 
         &_title {
             font-size: 48px;
