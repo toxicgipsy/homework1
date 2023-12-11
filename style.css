@@ -24,6 +24,10 @@ a {
   padding-right: calc(50% - 660px);
 }
 
+.background_color {
+  background: #000915;
+}
+
 .top {
   background-image: url(./img/backgraund.jpg);
   background-repeat: no-repeat;
@@ -75,10 +79,11 @@ a {
 
 .main {
   background: #000915;
-  height: 556px;
+  padding-bottom: 361px;
 }
 .main__gamebox {
   display: flex;
+  justify-content: center;
   gap: 32px;
   padding-top: 128px;
 }
@@ -95,16 +100,17 @@ a {
 }
 
 .seasons {
-  height: 880px;
   background-color: #000915;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-right: 135px;
+  justify-content: center;
+  gap: 135px;
+  padding-bottom: 472px;
 }
 .seasons__box {
-  width: 584px;
+  width: 425px;
 }
 .seasons__box_title {
   font-size: 48px;
@@ -166,7 +172,7 @@ a {
     line-height: normal;
   }
   .main {
-    height: 1221px;
+    padding-bottom: 178px;
   }
   .main__gamebox {
     display: flex;
@@ -174,6 +180,10 @@ a {
   }
   .main__gamebox_pic {
     width: 343px;
+  }
+  .seasons {
+    padding-bottom: 136px;
+    gap: 64px;
   }
   .seasons__box {
     width: 584px;
@@ -196,7 +206,13 @@ a {
     text-align: center;
   }
   .seasons__imgbox_img {
-    width: 344px;
+    width: 340px;
+  }
+  .second__img_box {
+    order: 2;
+  }
+  .second__text_box {
+    order: 1;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -256,7 +272,7 @@ a {
     gap: 32px;
     flex-direction: column;
     align-items: center;
-    height: 1500px;
+    padding-bottom: 178px;
   }
   .main__gamebox {
     display: flex;
@@ -271,9 +287,14 @@ a {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    gap: 64px;
+    padding-bottom: 136px;
   }
   .seasons__box {
-    width: 584px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 64px;
   }
   .seasons__box_title {
     font-size: 32px;
@@ -291,7 +312,12 @@ a {
     text-align: center;
   }
   .seasons__imgbox_img {
-    width: 344px;
-    padding-top: 64px;
+    width: 390px;
+  }
+  .seasons .second__img_box {
+    order: 2;
+  }
+  .seasons .second__text_box {
+    order: 1;
   }
 }/*# sourceMappingURL=style.css.map */
