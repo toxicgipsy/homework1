@@ -47,7 +47,7 @@ while (n > 50) {
 }
 
 // Задание 6
-let day = 1;
+let day;
 let friday = 1;
 // while (day <= 31) {
 //     if (friday == day) {
@@ -59,6 +59,6 @@ let friday = 1;
 for (day = 1; day <= 31; day++) {
     if (friday == day) {
         console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
-        friday = friday +7;
+        friday = friday + 7;
     }
 }
