@@ -78,7 +78,7 @@ let enterTheNumber = Number(prompt('Введи число'));
         return 'Переданный параметр не является числом';
         
     } else {
-        return (`n в кубе равняется ${enterTheNumber*enterTheNumber*enterTheNumber}`)
+        return (`n в кубе равняется ${enterTheNumber * 3}`)
     }
 }
 
