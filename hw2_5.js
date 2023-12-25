@@ -1,8 +1,8 @@
 // Задание 1
 // Напишите функцию, которая возвращает меньшее из 2 чисел.
 function userNumbers() {
-    let userNumbersOne = Number(prompt('Введи первое число'));
-    let userNumbersTwo = Number(prompt('Введи второе число'));
+    let userNumbersOne = 7;
+    let userNumbersTwo = 4;
     if (userNumbersOne > userNumbersTwo) {
         return(userNumbersTwo);
     } else {
@@ -15,7 +15,7 @@ console.log(userNumbers());
 // Задание 2
 // Напишите функцию, которая принимает число, а возвращает строку 'Число четное', если число четное, 'Число нечетное' — если нечетное.
 function evenNumber() {
-    let evenUserNumber = Number(prompt('Введи число'));
+    let evenUserNumber = 15;
     let stringNumber = String(evenUserNumber);
     if (stringNumber % 2 == 0) {
         return('Число четное')
@@ -29,7 +29,7 @@ console.log(evenNumber());
 //Задание 3
 // 3.1. Напишите функцию, которая принимает параметром число и выводит в консоль квадрат этого числа.
 function squareNumber() {
-    let squareUserNumber = Number(prompt('Введи число'));
+    let squareUserNumber = 6
         console.log(squareUserNumber ** 2);
 }
 
@@ -37,7 +37,7 @@ squareNumber();
 
 // 3.2. Напишите функцию, которая принимает параметром число и возвращает квадрат этого числа.
 function squareUserNumberReturn() {
-    let squareUserNumberReturn = Number(prompt('Введи число'));
+    let squareUserNumberReturn = 8
         return(squareUserNumberReturn ** 2);
 }
 
@@ -45,7 +45,7 @@ console.log(squareUserNumberReturn());
 
 // Задание 4
 function age () {
-    let userAge = parseInt(prompt('Введи свой возраст'))
+    let userAge = 27;
     if (userAge < 0) {
         alert('Вы ввели неправильное значение');
     } else if (userAge >= 0 && userAge <= 12) {
@@ -59,8 +59,8 @@ age();
 
 // Задание 5
 function twoNumbers(a, b) {
-    let enterOneNumbers = Number(prompt('Введи первое число'));
-    let enterTwoNumbers = Number(prompt('Введи второе число'));
+    let enterOneNumbers = 5;
+    let enterTwoNumbers = 12;
     
     if (isNaN(enterOneNumbers) || isNaN(enterTwoNumbers)) {
         return ('Одно или оба значения не являются числом');
@@ -73,7 +73,7 @@ console.log(twoNumbers());
 
 // Задание 6
 function cubeNumber() {
-let enterTheNumber = Number(prompt('Введи число'));
+let enterTheNumber = 7;
     if (isNaN(enterTheNumber) == true) {
         return 'Переданный параметр не является числом';
         
